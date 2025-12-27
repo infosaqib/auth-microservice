@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/husky.sh"
+
+# Add your custom pre-commit commands here
+exec < /dev/tty && node_modules/.bin/cz --hook || true
